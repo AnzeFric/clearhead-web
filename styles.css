@@ -18,3 +18,27 @@ body {
   color: var(--primary-text-color);
   font-family: "San Francisco", sans-serif;
 }
+
+nav {
+  display: flex;
+  height: 9rem;
+  justify-content: space-between;
+  padding: 20px 10px 20px 20px;
+}
+
+.button-soft-bg {
+  display: flex;
+  background-color: var(--special-bg-color);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  align-content: center;
+  justify-content: center;
+  height: 70%;
+  align-self: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#menu-icon {
+  width: 60%;
+}
