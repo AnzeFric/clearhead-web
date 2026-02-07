@@ -1,0 +1,12 @@
+:root {
+  --special-color: #794bca;
+
+  /* Backgrounds */
+  --primary-bg-color: #191918;
+  --secondary-bg-color: #2e2f2f;
+  --special-bg-color: #794bca;
+
+  /* Texts */
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #9c9ca2;
+}
