@@ -33,7 +33,7 @@ h1 {
   text-align: center;
   margin: 0;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 nav {
@@ -60,6 +60,17 @@ nav {
   width: 60%;
 }
 
+header {
+  padding: 2rem;
+
+  p {
+    font-size: var(--font-size-primary);
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -68,15 +79,9 @@ section {
   padding: 2rem;
 }
 
-section#header {
-  p {
-    font-size: var(--font-size-primary);
-    margin: 0;
-    margin-top: 1rem;
-  }
-}
-
 section#download-ios {
+  margin-top: 2rem;
+
   #btn-download-ios {
     display: flex;
     background-color: var(--special-bg-color);
