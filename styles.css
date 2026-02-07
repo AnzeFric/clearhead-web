@@ -66,3 +66,35 @@ section#header {
     margin-top: 1rem;
   }
 }
+
+section#download-ios {
+  #btn-download-ios {
+    display: flex;
+    background-color: var(--special-bg-color);
+    padding-right: 3rem;
+    padding-left: 3rem;
+    gap: 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #ios-logo {
+    width: 4rem;
+  }
+
+  #btn-download-ios p {
+    font-size: 2.3rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+  }
+
+  #img-header-home-page {
+    width: 50%;
+    margin-top: 2rem;
+  }
+}
