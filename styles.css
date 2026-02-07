@@ -125,7 +125,8 @@ section#download-ios {
   line-height: 3.5rem;
 }
 
-section#overview {
+section#overview,
+section#details {
   h3 {
     font-size: var(--font-size-card-context);
     text-align: center;
