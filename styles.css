@@ -10,3 +10,11 @@
   --primary-text-color: #ffffff;
   --secondary-text-color: #9c9ca2;
 }
+
+body {
+  padding: 4rem;
+  margin: 0;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: "San Francisco", sans-serif;
+}
