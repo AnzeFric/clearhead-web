@@ -156,13 +156,6 @@ footer {
   margin: 0;
   padding: 2rem;
 
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    padding: 2rem 6rem;
-  }
-
   h4 {
     font-size: 3rem;
     margin: 0;
@@ -181,4 +174,11 @@ footer {
     text-decoration: none;
     align-self: flex-start;
   }
+}
+
+footer > * {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 2rem 5rem;
 }
