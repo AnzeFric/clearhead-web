@@ -1,6 +1,7 @@
 :root {
   /* COLORS */
   --special-color: #794bca;
+  --special-gold-color: #ffdb5a;
 
   /* Backgrounds */
   --primary-bg-color: #191918;
@@ -17,15 +18,19 @@
   --font-size-section-subtitle: 2.5rem;
   --font-size-card-context: 3.5rem;
   --font-size-primary: 2.3rem;
+  --font-size-secondary: 2rem;
   --font-size-button: 2.3rem;
 }
 
 body {
-  padding: 4rem;
   margin: 0;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: "San Francisco", sans-serif;
+}
+
+#content {
+  padding: 4rem;
 }
 
 h1 {
@@ -143,5 +148,37 @@ section#details {
     width: 100%;
     margin-top: 6.5rem;
     border-radius: 2rem;
+  }
+}
+
+footer {
+  background-color: var(--secondary-bg-color);
+  margin: 0;
+  padding: 2rem;
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 2rem 6rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: var(--font-size-secondary);
+    margin: 0;
+  }
+
+  a {
+    font-size: var(--font-size-primary);
+    margin: 0;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    align-self: flex-start;
   }
 }
