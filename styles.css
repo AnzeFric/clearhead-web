@@ -64,6 +64,60 @@ nav {
 
 #menu-icon {
   width: 60%;
+  transition:
+    transform 0.3s ease,
+    opacity 0.2s ease;
+}
+
+#menu-icon.icon-change {
+  animation: iconSwap 0.3s ease-in-out;
+}
+
+#expandable-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition:
+    opacity 0.5s ease-in-out,
+    max-height 0.4s ease;
+}
+
+#expandable-nav a {
+  font-size: var(--font-size-nav);
+  margin: 0;
+  opacity: 0;
+  transform: translateY(-10px) scale(0.8);
+  animation: popIn 0.4s ease forwards;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+#expandable-nav a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+#expandable-nav a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+#expandable-nav a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+#expandable-nav.hidden {
+  opacity: 0;
+  max-height: 0;
+  padding: 0 2rem;
+  pointer-events: none;
+}
+
+#expandable-nav.hidden a {
+  animation: none;
+  opacity: 0;
 }
 
 header {
@@ -184,53 +238,6 @@ footer > * {
   padding: 2rem 5rem;
 }
 
-#expandable-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition:
-    opacity 0.5s ease-in-out,
-    max-height 0.4s ease;
-}
-
-#expandable-nav a {
-  font-size: var(--font-size-nav);
-  margin: 0;
-  opacity: 0;
-  transform: translateY(-10px) scale(0.8);
-  animation: popIn 0.4s ease forwards;
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
-#expandable-nav a:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-#expandable-nav a:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-#expandable-nav a:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-#expandable-nav.hidden {
-  opacity: 0;
-  max-height: 0;
-  padding: 0 2rem;
-  pointer-events: none;
-}
-
-#expandable-nav.hidden a {
-  animation: none;
-  opacity: 0;
-}
-
 @keyframes popIn {
   0% {
     opacity: 0;
@@ -242,5 +249,20 @@ footer > * {
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes iconSwap {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(90deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
   }
 }
