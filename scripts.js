@@ -20,3 +20,13 @@ document.getElementById("menu-icon").addEventListener("click", function () {
     { once: true }, // Removes the listener after one fire
   );
 });
+
+window.addEventListener("resize", function () {
+  const element = document.getElementById("expandable-nav");
+
+  if (window.innerWidth < 1024) {
+    element.classList.add("hidden");
+  } else {
+    element.classList.remove("hidden");
+  }
+});
