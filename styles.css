@@ -44,6 +44,11 @@ h1 {
 
 nav {
   display: flex;
+  flex-direction: column;
+}
+
+#nav-content {
+  display: flex;
   height: 9rem;
   justify-content: space-between;
   padding: 20px 10px 20px 20px;
@@ -84,6 +89,39 @@ nav {
   transition:
     opacity 0.5s ease-in-out,
     max-height 0.4s ease;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #nav-content {
+    display: flex;
+    flex-direction: row;
+    height: 9rem;
+    justify-content: space-between;
+    padding: 20px 10px 20px 20px;
+  }
+
+  #mobile-menu-button {
+    display: none;
+  }
+
+  #expandable-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition:
+      opacity 0.5s ease-in-out,
+      max-height 0.4s ease;
+  }
 }
 
 #expandable-nav a {
