@@ -105,6 +105,10 @@ nav {
 }
 
 @media (min-width: 1024px) {
+  #content {
+    padding: 1rem 4rem;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -117,6 +121,10 @@ nav {
     height: 9rem;
     justify-content: space-between;
     padding: 20px 10px 20px 20px;
+  }
+
+  #home-logo {
+    width: 4rem;
   }
 
   #mobile-menu-button {
