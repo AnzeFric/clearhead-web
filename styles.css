@@ -21,6 +21,19 @@
   --font-size-secondary: 2rem;
   --font-size-button: 2.3rem;
   --font-size-nav: 2.6rem;
+  --font-size-footer-title: 3rem;
+
+  @media (min-width: 1024px) {
+    --font-size-h1: 3rem;
+    --font-size-section-title: 1.5rem;
+    --font-size-section-subtitle: 1rem;
+    --font-size-card-context: 1.2rem;
+    --font-size-primary: 1.3rem;
+    --font-size-secondary: 1rem;
+    --font-size-button: 1.2rem;
+    --font-size-nav: 1rem;
+    --font-size-footer-title: 1.5rem;
+  }
 }
 
 body {
@@ -201,7 +214,7 @@ section#download-ios {
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: var(--font-size-secondary);
     margin-top: 2.5rem;
   }
 
@@ -250,7 +263,7 @@ footer {
   padding: 2rem;
 
   h4 {
-    font-size: 3rem;
+    font-size: var(--font-size-footer-title);
     margin: 0;
     margin-bottom: 1.5rem;
   }
