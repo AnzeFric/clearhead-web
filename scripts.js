@@ -1,32 +1,61 @@
-document.getElementById("menu-icon").addEventListener("click", function () {
-  const nav = document.getElementById("expandable-nav");
-  const menuIcon = document.getElementById("menu-icon");
+const navState = {
+  isMenuOpen: false,
+  wasMobileView: window.innerWidth < 1024,
+};
 
-  nav.classList.toggle("hidden");
-
+function updateMenuIcon(menuIcon, isOpen) {
   menuIcon.classList.add("icon-change");
-
-  if (nav.classList.contains("hidden")) {
-    menuIcon.src = "assets/icons/menu-icon.svg";
-  } else {
-    menuIcon.src = "assets/icons/close-icon.svg";
-  }
+  menuIcon.src = isOpen
+    ? "assets/icons/close-icon.svg"
+    : "assets/icons/menu-icon.svg";
 
   menuIcon.addEventListener(
     "animationend",
     function () {
       menuIcon.classList.remove("icon-change");
     },
-    { once: true }, // Removes the listener after one fire
+    { once: true }
   );
-});
+}
 
-window.addEventListener("resize", function () {
-  const element = document.getElementById("expandable-nav");
+function handleNav() {
+  const expandableNav = document.getElementById("expandable-nav");
+  const menuIcon = document.getElementById("menu-icon");
+  const isMobileView = window.innerWidth < 1024;
 
-  if (window.innerWidth < 1024) {
-    element.classList.add("hidden");
+  if (isMobileView) {
+    if (navState.isMenuOpen) {
+      expandableNav.classList.remove("hidden");
+      menuIcon.src = "assets/icons/close-icon.svg";
+    } else {
+      expandableNav.classList.add("hidden");
+      menuIcon.src = "assets/icons/menu-icon.svg";
+    }
   } else {
-    element.classList.remove("hidden");
+    expandableNav.classList.remove("hidden");
+
+    // If transitioning from mobile to desktop while menu was open, reset state
+    if (navState.wasMobileView && navState.isMenuOpen) {
+      navState.isMenuOpen = false;
+      updateMenuIcon(menuIcon, false);
+    }
   }
+
+  navState.wasMobileView = isMobileView;
+}
+
+// Menu toggle handler
+document.getElementById("menu-icon").addEventListener("click", function () {
+  const nav = document.getElementById("expandable-nav");
+  const menuIcon = document.getElementById("menu-icon");
+
+  navState.isMenuOpen = !navState.isMenuOpen;
+  nav.classList.toggle("hidden");
+  updateMenuIcon(menuIcon, navState.isMenuOpen);
 });
+
+// Run on page load
+document.addEventListener("DOMContentLoaded", handleNav);
+
+// Run on window resize
+window.addEventListener("resize", handleNav);
