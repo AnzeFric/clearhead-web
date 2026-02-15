@@ -142,32 +142,6 @@ nav {
   }
 }
 
-@media (min-width: 1024px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
-
-    #mobile-menu-button {
-      display: none;
-    }
-
-    #expandable-nav {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 2rem;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      overflow: hidden;
-      transition:
-        opacity 0.5s ease-in-out,
-        max-height 0.4s ease;
-    }
-  }
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -213,16 +187,84 @@ header {
     #secondary-text {
       font-size: var(--font-size-secondary);
     }
-
-    #img-header-home-page {
-      width: 50%;
-      margin-top: 2rem;
-    }
   }
 
   #img-header-home {
     width: 50%;
     margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+
+    #mobile-menu-button {
+      display: none;
+    }
+
+    #expandable-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition:
+        opacity 0.5s ease-in-out,
+        max-height 0.4s ease;
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+    gap: 5rem;
+
+    #download-ios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      h1 {
+        font-size: var(--font-size-h1);
+        text-align: start;
+        margin-top: 1rem;
+      }
+
+      p {
+        font-size: var(--font-size-primary);
+        line-height: calc(var(--font-size-primary) * 1.5);
+        text-align: start;
+      }
+
+      #btn-download-ios {
+        display: flex;
+        background-color: var(--special-bg-color);
+        padding: 0.5rem 1rem;
+        gap: 1rem;
+        border-radius: 5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        align-items: center;
+      }
+
+      #ios-logo {
+        width: 2rem;
+      }
+    }
+
+    #img-header-home {
+      width: 35%;
+      margin-top: 1.5rem;
+    }
   }
 }
 
