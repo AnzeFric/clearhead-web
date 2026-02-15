@@ -31,7 +31,7 @@
     --font-size-primary: 1.3rem;
     --font-size-secondary: 1rem;
     --font-size-button: 1.2rem;
-    --font-size-nav: 1rem;
+    --font-size-nav: 1.2rem;
     --font-size-footer-title: 1.5rem;
   }
 }
@@ -139,6 +139,32 @@ nav {
   #expandable-nav.hidden a {
     animation: none;
     opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+
+    #mobile-menu-button {
+      display: none;
+    }
+
+    #expandable-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition:
+        opacity 0.5s ease-in-out,
+        max-height 0.4s ease;
+    }
   }
 }
 
