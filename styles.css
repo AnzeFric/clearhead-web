@@ -341,24 +341,27 @@ footer {
   margin: 0;
   padding: 1rem;
 
-  h4 {
-    font-size: var(--font-size-footer-title);
-    margin-bottom: 1.3rem;
-  }
+  #footer-content {
+    h4 {
+      font-size: var(--font-size-footer-title);
+      margin-bottom: 1.3rem;
+    }
 
-  p {
-    font-size: var(--font-size-secondary);
-  }
+    p {
+      font-size: var(--font-size-secondary);
+    }
 
-  a {
-    font-size: var(--font-size-primary);
-    color: var(--primary-text-color);
-    text-decoration: none;
-    align-self: flex-start;
+    a {
+      font-size: var(--font-size-primary);
+      color: var(--primary-text-color);
+      text-decoration: none;
+      align-self: flex-start;
+    }
   }
 }
 
-footer > * {
+footer > *,
+#footer-content > * {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 2rem;
