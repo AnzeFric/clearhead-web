@@ -18,7 +18,7 @@
   --font-size-section-subtitle: 1rem;
   --font-size-card-context: 1.6rem;
   --font-size-primary: 1rem;
-  --font-size-secondary: 0.8rem;
+  --font-size-secondary: 0.9rem;
   --font-size-button: 1rem;
   --font-size-nav: 1rem;
   --font-size-footer-title: 1.2rem;
@@ -225,6 +225,37 @@ section#details {
   }
 }
 
+footer {
+  background-color: var(--secondary-bg-color);
+  margin: 0;
+  padding: 1rem;
+
+  #footer-content {
+    h4 {
+      font-size: var(--font-size-footer-title);
+      margin-bottom: 1.3rem;
+    }
+
+    p {
+      font-size: var(--font-size-secondary);
+    }
+
+    a {
+      font-size: var(--font-size-primary);
+      color: var(--primary-text-color);
+      text-decoration: none;
+      align-self: flex-start;
+    }
+  }
+}
+
+footer > *,
+#footer-content > * {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem 1rem;
+}
+
 @media (min-width: 1024px) {
   nav {
     display: flex;
@@ -334,37 +365,13 @@ section#details {
     height: 30vw;
     object-fit: cover;
   }
-}
-
-footer {
-  background-color: var(--secondary-bg-color);
-  margin: 0;
-  padding: 1rem;
 
   #footer-content {
-    h4 {
-      font-size: var(--font-size-footer-title);
-      margin-bottom: 1.3rem;
-    }
-
-    p {
-      font-size: var(--font-size-secondary);
-    }
-
-    a {
-      font-size: var(--font-size-primary);
-      color: var(--primary-text-color);
-      text-decoration: none;
-      align-self: flex-start;
-    }
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 5rem;
   }
-}
-
-footer > *,
-#footer-content > * {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem 2rem;
 }
 
 @keyframes popIn {
