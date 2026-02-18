@@ -34,6 +34,18 @@
     --font-size-nav: 1.2rem;
     --font-size-footer-title: 1.5rem;
   }
+
+  @media (min-width: 1280px) {
+    --font-size-h1: 4rem;
+    --font-size-section-title: 1.8rem;
+    --font-size-section-subtitle: 1.2rem;
+    --font-size-card-context: 1.6rem;
+    --font-size-primary: 1.2rem;
+    --font-size-secondary: 1rem;
+    --font-size-button: 1.2rem;
+    --font-size-nav: 1.2rem;
+    --font-size-footer-title: 1.3rem;
+  }
 }
 
 h1,
@@ -371,6 +383,72 @@ footer > *,
     flex-direction: row;
     padding: 1rem;
     gap: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-self: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+    gap: 5rem;
+
+    #download-ios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      h1 {
+        font-size: var(--font-size-h1);
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      p {
+        font-size: var(--font-size-primary);
+        line-height: calc(var(--font-size-primary) * 1.5);
+        text-align: center;
+        width: 80%;
+      }
+    }
+
+    #img-header-home {
+      width: 30%;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .feature img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+  }
+
+  footer {
+    padding-left: 7rem;
+  }
+
+  #footer-content {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 8rem;
+    margin-bottom: 2rem;
   }
 }
 
