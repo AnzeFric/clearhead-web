@@ -1,56 +1,396 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Pricing — FeelBetter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="content">
-      <nav>
-        <div id="nav-content">
-          <img src="../../assets/icons/logo.svg" alt="Logo" id="home-logo" />
-          <div id="mobile-menu-button" class="button-soft-bg">
-            <img
-              src="../../assets/icons/menu-icon.svg"
-              alt="Menu icon"
-              id="menu-icon"
-            />
-          </div>
-        </div>
-        <div id="expandable-nav" class="hidden">
-          <a href="../../index.html">Home</a>
-          <a href="./index.html">Pricing</a>
-          <a href="../privacy-policy/index.html">Privacy Policy</a>
-          <a href="">Download</a>
-        </div>
-      </nav>
-    </div>
-    <footer>
-      <div id="footer-content">
-        <div>
-          <h4>Primary</h4>
-          <a href="../../index.html">Home</a>
-          <br />
-          <a href="">iOS App</a>
-          <br />
-          <a href="mailto:techmg103@gmail.com">Support</a>
-        </div>
-        <div>
-          <h4>Other</h4>
-          <a href="./index.html">Pricing</a>
-          <br />
-          <a href="../privacy-policy/index.html">Privacy Policy</a>
-          <br />
-          <a
-            href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
-            >Terms of Service</a
-          >
+    <!-- NAV -->
+    <nav>
+      <div class="nav-inner">
+        <a href="../home/index.html" class="nav-logo">
+          <img
+            class="nav-logo-icon"
+            src="../../assets/icons/logo.svg"
+            alt="Logo icon"
+          />
+          <span>FeelBetter</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="./index.html">Pricing</a></li>
+          <li><a href="../privacy-policy/index.html">Privacy</a></li>
+          <li><a href="" class="btn-nav">Download</a></li>
+        </ul>
+        <div
+          class="nav-hamburger"
+          id="hamburger"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle menu"
+        >
+          <span></span><span></span><span></span>
         </div>
       </div>
-      <p>© 2026 OneTap Studios - All rights reserved.</p>
+      <div class="nav-mobile" id="mobile-nav">
+        <a href="../home/index.html">Home</a>
+        <a href="./index.html">Pricing</a>
+        <a href="../privacy-policy/index.html">Privacy Policy</a>
+        <a href="">Download</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="wrapper">
+      <div class="page-hero">
+        <div class="page-hero-eyebrow">Simple pricing</div>
+        <h1>One plan,<br /><em>all features</em></h1>
+        <p>
+          No tiers, no feature gating. Everything unlocked — pick the billing
+          cycle that works for you.
+        </p>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <div class="pricing-section">
+      <div class="wrapper">
+        <div class="pricing-grid">
+          <!-- ANNUAL -->
+          <div class="pricing-card featured">
+            <div class="card-top">
+              <div class="card-label">Annual</div>
+              <div class="badge-popular">Best value</div>
+            </div>
+            <div class="price-block">
+              <div class="price-amount">
+                <span class="price-currency">$</span>34<span
+                  style="opacity: 0.55"
+                  >.99</span
+                >
+              </div>
+              <div class="price-period">
+                per year &nbsp;·&nbsp;
+                <span class="price-per-month">~$2.92 / mo</span>
+              </div>
+            </div>
+            <div class="price-divider"></div>
+            <ul class="feature-list">
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                All features unlocked
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Unlimited history & calendar view
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Pain location tracking
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Exportable PDF reports
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Smart reminders & insights
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Save 63% vs monthly billing
+              </li>
+            </ul>
+            <a href="" class="btn-cta btn-cta-primary"
+              >Get started — $34.99 / yr</a
+            >
+          </div>
+
+          <!-- MONTHLY -->
+          <div class="pricing-card">
+            <div class="card-top">
+              <div class="card-label">Monthly</div>
+            </div>
+            <div class="price-block">
+              <div class="price-amount">
+                <span class="price-currency">$</span>7<span
+                  style="opacity: 0.55"
+                  >.99</span
+                >
+              </div>
+              <div class="price-period">per month</div>
+            </div>
+            <div class="price-divider"></div>
+            <ul class="feature-list">
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                All features unlocked
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Unlimited history & calendar view
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Pain location tracking
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Exportable PDF reports
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Smart reminders & insights
+              </li>
+              <li>
+                <span class="check"
+                  ><svg viewBox="0 0 10 8" fill="none">
+                    <path
+                      d="M1 4l3 3 5-6"
+                      stroke="#a87ffa"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Cancel any time
+              </li>
+            </ul>
+            <a href="" class="btn-cta btn-cta-secondary"
+              >Get started — $7.99 / mo</a
+            >
+          </div>
+        </div>
+
+        <p class="comparison-note">
+          Annual saves you <strong>~$60.89 a year</strong> compared to monthly
+          billing. &nbsp;·&nbsp; No credit card needed to try.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="wrapper">
+      <div class="faq-section">
+        <div class="faq-header">
+          <div class="faq-label">Questions</div>
+          <h2 class="faq-heading">Frequently asked</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-q">Is there a free trial?</div>
+            <div class="faq-a">
+              Yes — you can explore the app for free before subscribing. No
+              credit card required to get started.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Can I switch between plans?</div>
+            <div class="faq-a">
+              Absolutely. You can upgrade to annual or switch to monthly at any
+              time through your App Store subscription settings.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">What happens if I cancel?</div>
+            <div class="faq-a">
+              You keep full access until the end of your billing period. After
+              that, your data is preserved but premium features are paused.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">How is payment handled?</div>
+            <div class="faq-a">
+              All billing is managed securely through Apple's App Store via
+              RevenueCat. We never see or store your payment details.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Is my data private?</div>
+            <div class="faq-a">
+              Yes. Your health data stays on your device and is never sold or
+              shared with third parties. See our Privacy Policy for details.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Do you offer refunds?</div>
+            <div class="faq-a">
+              Refund requests are handled by Apple directly via the App Store.
+              Contact us at
+              <a
+                href="mailto:techmg103@gmail.com"
+                style="color: var(--accent-lt)"
+                >techmg103@gmail.com</a
+              >
+              and we'll do our best to help.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              <img
+                class="nav-logo-icon"
+                src="../../assets/icons/logo.svg"
+                alt="Logo icon"
+              />
+              <span
+                style="
+                  font-family: var(--font-serif);
+                  font-size: 1.1rem;
+                  letter-spacing: -0.02em;
+                  font-weight: 500;
+                "
+                >FeelBetter</span
+              >
+            </div>
+            <p>
+              A health tracking app designed to help you feel better, one day at
+              a time.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Primary</h4>
+            <a href="../home/index.html">Home</a>
+            <a href="">iOS App</a>
+            <a href="mailto:techmg103@gmail.com">Support</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="./index.html">Pricing</a>
+            <a href="../privacy-policy/index.html">Privacy Policy</a>
+            <a
+              href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 OneTap Studios. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="../../scripts.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
