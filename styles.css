@@ -587,7 +587,7 @@ footer {
     gap: 1rem;
   }
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   section {
     padding: 3rem 0;

@@ -594,7 +594,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .page-hero {
     padding: 3rem 0 2.5rem;
