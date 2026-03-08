@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feel Better — One Day at a Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="./index.html" class="nav-logo">
+          <img
+            class="nav-logo-icon"
+            src="./assets/icons/logo.svg"
+            alt="Logo icon"
+          />
+          <span>FeelBetter</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/pricing/index.html">Pricing</a></li>
+          <li><a href="./pages/privacy-policy/index.html">Privacy</a></li>
+          <li><a href="" class="btn-nav">Download</a></li>
+        </ul>
+        <div
+          class="nav-hamburger"
+          id="hamburger"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle menu"
+        >
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="nav-mobile" id="mobile-nav">
+        <a href="./index.html">Home</a>
+        <a href="./pages/pricing/index.html">Pricing</a>
+        <a href="./pages/privacy-policy/index.html">Privacy Policy</a>
+        <a href="">Download</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="wrapper">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <div class="hero-eyebrow">Health tracking, reimagined</div>
+            <h1>Feel better,<br /><em>one day</em><br />at a time</h1>
+            <p>
+              A simple, beautiful app designed to help you understand your body,
+              track your progress, and build healthier habits every day.
+            </p>
+            <div class="hero-cta">
+              <a href="" class="btn-primary">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                  />
+                </svg>
+                Download on iOS
+              </a>
+              <span class="hero-secondary-note"
+                >Free to start · No credit card required</span
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <img
+                src="./assets/images/home-page.png"
+                alt="App home screen"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="phone-placeholder" style="display: none">
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 24 24"
+                  fill="rgba(124,82,217,0.35)"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="stats-strip">
+        <div class="stat-item">
+          <span class="stat-value">10k+</span>
+          <div class="stat-label">Active users</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">4.9★</span>
+          <div class="stat-label">App Store rating</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">6+</span>
+          <div class="stat-label">Tracking modules</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">100%</span>
+          <div class="stat-label">Private by default</div>
+        </div>
+      </div>
+
+      <section id="overview">
+        <div class="features-header">
+          <div class="section-label">Core features</div>
+          <h2 class="section-heading">The basics,<br />but better</h2>
+          <p class="section-sub">
+            Built to be the app you'll actually want to open. Track your daily
+            progress with clarity and ease.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/overview.png"
+                alt="Overview"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-ov" style="display: none">📊</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Overview</div>
+              <div class="feature-card-desc">
+                A clear daily summary of how you're feeling, at a glance.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/calendar.png"
+                alt="Calendar"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-cal" style="display: none">📅</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Calendar</div>
+              <div class="feature-card-desc">
+                Visualize your health journey across days, weeks, and months.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/pain-location.png"
+                alt="Pain location"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-pin" style="display: none">📍</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Pain Location</div>
+              <div class="feature-card-desc">
+                Pinpoint and log discomfort to share useful data with your
+                doctor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="details">
+      <div class="wrapper">
+        <div class="features-header">
+          <div class="section-label">Advanced tools</div>
+          <h2 class="section-heading">Simple,<br />but powerful</h2>
+          <p class="section-sub">
+            Almost every feature can be turned on or off — so you decide how
+            deep to go.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/overview.png"
+                alt="Overview"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-ov" style="display: none">📊</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Overview</div>
+              <div class="feature-card-desc">
+                Your complete wellness snapshot in one place.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/calendar.png"
+                alt="Calendar"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-cal" style="display: none">📅</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Calendar</div>
+              <div class="feature-card-desc">
+                Spot patterns and track improvements over time.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/pain-location.png"
+                alt="Pain location"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-pin" style="display: none">📍</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Pain Location</div>
+              <div class="feature-card-desc">
+                Body map logging for precise symptom tracking.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/overview.png"
+                alt="Insights"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-ex1" style="display: none">💡</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Insights</div>
+              <div class="feature-card-desc">
+                Smart analysis that surfaces trends in your data automatically.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/calendar.png"
+                alt="Reminders"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-ex2" style="display: none">🔔</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Reminders</div>
+              <div class="feature-card-desc">
+                Gentle nudges to log entries at exactly the right moment.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-img">
+              <img
+                src="./assets/images/pain-location.png"
+                alt="Reports"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder p-ex3" style="display: none">📄</div>
+            </div>
+            <div class="feature-card-body">
+              <div class="feature-card-title">Reports</div>
+              <div class="feature-card-desc">
+                Export shareable PDFs to bring to your next appointment.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              <img
+                class="nav-logo-icon"
+                src="./assets/icons/logo.svg"
+                alt="Logo icon"
+              />
+              <span
+                style="
+                  font-family: var(--font-serif);
+                  font-size: 1.1rem;
+                  letter-spacing: -0.02em;
+                  font-weight: 500;
+                "
+                >FeelBetter</span
+              >
+            </div>
+            <p>
+              A health tracking app designed to help you feel better, one day at
+              a time.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Primary</h4>
+            <a href="./index.html">Home</a>
+            <a href="">iOS App</a>
+            <a href="mailto:techmg103@gmail.com">Support</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="./pages/pricing/index.html">Pricing</a>
+            <a href="./pages/privacy-policy/index.html">Privacy Policy</a>
+            <a
+              href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 OneTap Studios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
